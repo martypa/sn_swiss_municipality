@@ -17,4 +17,4 @@ jobs:
         env:
           nowUsername: ${{ secrets.SN_USERNAME }}
           nowPassword: ${{ secrets.SN_PASSWORD }}
-          nowInstallInstance: ${{ secrets.SN_TEST_INSTANCE }}
+          nowInstallInstance: ${{ secrets.SN_DEV_INSTANCE }}
