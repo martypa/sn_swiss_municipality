@@ -1,0 +1,47 @@
+name: ServiceNow on develop Test
+
+on:
+  push:
+    branches:
+      - 'develop'
+
+jobs:
+  build:
+      name: Publish App
+      runs-on: ubuntu-latest
+      steps:
+        - name: ServiceNow CI/CD Apply Changes
+          uses: ServiceNow/sncicd-apply-changes@2.0.0
+          env:
+            nowUsername: ${{ secrets.SN_USERNAME }}
+            nowPassword: ${{ secrets.SN_PASSWORD }}
+            nowSourceInstance: ${{ secrets.SN_TEST_INSTANCE }}
+            appSysID: ${{ secrets.SN_APP_SYSID }}
+
+        - name: ServiceNow CI/CD Publish App
+          id: publish_app
+          uses: ServiceNow/sncicd-publish-app@2.0.1
+          with:
+            versionTemplate: 1.1
+            versionFormat: template
+          env:
+            nowUsername: ${{ secrets.SN_USERNAME }}
+            nowPassword: ${{ secrets.SN_PASSWORD }}
+            nowSourceInstance: ${{ secrets.SN_TEST_INSTANCE }}
+            appSysID: ${{ secrets.SN_APP_SYSID }}
+      outputs:
+        publishversion: ${{ needs.build.outputs.publishversion  }}
+
+  install:
+    name: Install App on TEST
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install SN App on TEST
+        uses: ServiceNow/sncicd-install-app@2.0.0
+        with:
+          version: ${{ needs.build.outputs.publishversion }}
+        env:
+          nowUsername: ${{ secrets.SN_USERNAME }}
+          nowPassword: ${{ secrets.SN_PASSWORD }}
+          nowInstallInstance: ${{ secrets.SN_TEST_INSTANCE }}
+          appSysID: ${{ secrets.SN_APP_SYSID }}
