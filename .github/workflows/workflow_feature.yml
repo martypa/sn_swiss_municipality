@@ -1,0 +1,20 @@
+name: ServiceNow on develop Test
+
+on:
+  push:
+    branches:
+      - 'feature/**'
+
+jobs:
+  test:
+    name: Run ATF on DEV
+    runs-on: ubuntu-latest
+    steps:
+      - name: ServiceNow CI/CD Run ATF Test Suite
+        uses: ServiceNow/sncicd-tests-run@2.0.0
+        with:
+          testSuiteSysId: ${{ secrets.SN_ATFTESTSUITE_SYSID }}
+        env:
+          nowUsername: ${{ secrets.SN_USERNAME }}
+          nowPassword: ${{ secrets.SN_PASSWORD }}
+          nowInstallInstance: ${{ secrets.SN_DEV_INSTANCE }}
