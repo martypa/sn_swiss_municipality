@@ -3,7 +3,7 @@
         <active>true</active>
         <copied_from/>
         <description>Validate there is at least one record in 'x_arcag_swiss_mun_municipality' matching query:
-Canton = ZG
+Canton = ZH
 With a failure timeout of 5 Seconds</description>
         <display_name>Record Query</display_name>
         <inputs/>
@@ -16,14 +16,14 @@ With a failure timeout of 5 Seconds</description>
         <sys_created_by>patrick.marty</sys_created_by>
         <sys_created_on>2022-09-07 12:19:45</sys_created_on>
         <sys_id>481145a5dbf9d1104f47265d13961904</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Record Query</sys_name>
         <sys_package display_value="Swiss Municipality" source="x_arcag_swiss_mun">7f3f7ce1dbf9d1104f47265d1396196b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Swiss Municipality">7f3f7ce1dbf9d1104f47265d1396196b</sys_scope>
         <sys_update_name>sys_atf_step_481145a5dbf9d1104f47265d13961904</sys_update_name>
         <sys_updated_by>patrick.marty</sys_updated_by>
-        <sys_updated_on>2022-09-07 12:19:45</sys_updated_on>
+        <sys_updated_on>2022-09-07 12:40:50</sys_updated_on>
         <table>x_arcag_swiss_mun_municipality</table>
         <test display_value="MUN Base Test">4801c1a5dbf9d1104f47265d139619b8</test>
         <timeout>1970-01-01 00:00:05</timeout>
@@ -80,10 +80,10 @@ With a failure timeout of 5 Seconds</description>
         <sys_created_by>patrick.marty</sys_created_by>
         <sys_created_on>2022-09-07 12:19:45</sys_created_on>
         <sys_id>e72145a5dbf9d1104f47265d139619b2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>patrick.marty</sys_updated_by>
-        <sys_updated_on>2022-09-07 12:19:45</sys_updated_on>
-        <value>canton=ZG^EQ</value>
+        <sys_updated_on>2022-09-07 12:40:51</sys_updated_on>
+        <value>canton=ZH^EQ</value>
         <variable display_value="Conditions">915990ab531000109e02ddeeff7b12f8</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_2d82e3c7531400109e02ddeeff7b12a7^id=481145a5dbf9d1104f47265d13961904"/>
