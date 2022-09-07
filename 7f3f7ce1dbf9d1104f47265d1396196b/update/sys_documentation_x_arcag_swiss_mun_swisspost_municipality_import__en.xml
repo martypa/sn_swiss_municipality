@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="SwissPost Municipality Import" language="en" table="x_arcag_swiss_mun_swisspost_municipality_import">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>SwissPost Municipality Import</label>
+            <language>en</language>
+            <name>x_arcag_swiss_mun_swisspost_municipality_import</name>
+            <plural>SwissPost Municipality Imports</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>patrick.marty</sys_created_by>
+            <sys_created_on>2022-09-07 12:16:14</sys_created_on>
+            <sys_id>44600565dbf9d1104f47265d13961964</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>SwissPost Municipality Import</sys_name>
+            <sys_package display_value="Swiss Municipality" source="x_arcag_swiss_mun">7f3f7ce1dbf9d1104f47265d1396196b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Swiss Municipality">7f3f7ce1dbf9d1104f47265d1396196b</sys_scope>
+            <sys_update_name>sys_documentation_x_arcag_swiss_mun_swisspost_municipality_import__en</sys_update_name>
+            <sys_updated_by>patrick.marty</sys_updated_by>
+            <sys_updated_on>2022-09-07 12:16:14</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

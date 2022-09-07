@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_arcag_swiss_mun.municipality_user" name="x_arcag_swiss_mun.municipality_user">166f3025dbf9d1104f47265d13961991</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>patrick.marty</sys_created_by>
+        <sys_created_on>2022-09-07 12:12:01</sys_created_on>
+        <sys_id>5e6f3025dbf9d1104f47265d13961994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>166f3025dbf9d1104f47265d13961991</sys_name>
+        <sys_package display_value="Swiss Municipality" source="x_arcag_swiss_mun">7f3f7ce1dbf9d1104f47265d1396196b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Swiss Municipality">7f3f7ce1dbf9d1104f47265d1396196b</sys_scope>
+        <sys_update_name>sys_embedded_help_role_5e6f3025dbf9d1104f47265d13961994</sys_update_name>
+        <sys_updated_by>patrick.marty</sys_updated_by>
+        <sys_updated_on>2022-09-07 12:12:01</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="SwissPost Municipality Import" max_length="40" name="x_arcag_swiss_mun_swisspost_municipality_import" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=AGGLONR" label="AGGLONR" max_length="40" name="u_agglonr" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=BFSNR" label="BFSNR" max_length="40" name="u_bfsnr" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=GEMEINDENAME" label="GEMEINDENAME" max_length="40" name="u_gemeindename" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=KANTON" label="KANTON" max_length="40" name="u_kanton" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=REC_ART" label="REC_ART" max_length="40" name="u_rec_art" type="string"/>
+    </element>
+</database>
