@@ -22,7 +22,7 @@ jobs:
           id: publish_app
           uses: ServiceNow/sncicd-publish-app@2.0.1
           with:
-            versionTemplate: 1.1
+            versionTemplate: 1.2
             versionFormat: template
           env:
             nowUsername: ${{ secrets.SN_USERNAME }}
@@ -30,13 +30,15 @@ jobs:
             nowSourceInstance: ${{ secrets.SN_DEV_INSTANCE }}
             appSysID: ${{ secrets.SN_APP_SYSID }}
       outputs:
-        publishversion: ${{ needs.build.outputs.publishversion  }}
+        publishversion: ${{ steps.publish_app.outputs.newVersion }}
 
   install:
+    needs: build
     name: Install App on TEST
     runs-on: ubuntu-latest
     steps:
       - name: Install SN App on TEST
+        id: install_app
         uses: ServiceNow/sncicd-install-app@2.0.0
         with:
           version: ${{ needs.build.outputs.publishversion }}
