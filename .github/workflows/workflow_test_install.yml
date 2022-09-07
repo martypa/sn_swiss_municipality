@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-      name: Publish App
+      name: Publish App on DEV
       runs-on: ubuntu-latest
       steps:
         - name: ServiceNow CI/CD Apply Changes
@@ -47,3 +47,17 @@ jobs:
           nowPassword: ${{ secrets.SN_PASSWORD }}
           nowInstallInstance: ${{ secrets.SN_TEST_INSTANCE }}
           appSysID: ${{ secrets.SN_APP_SYSID }}
+
+  applyChanges:
+    needs: build
+    name: Apply develop Changes on DEV
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply develop Changes on DEV
+        uses: ServiceNow/sncicd-apply-changes@2.0.0
+        env:
+          nowUsername: ${{ secrets.SN_USERNAME }}
+          nowPassword: ${{ secrets.SN_PASSWORD }}
+          nowSourceInstance: ${{ secrets.SN_DEV_INSTANCE }}
+          appSysID: ${{ secrets.SN_APP_SYSID }}
+          branch: 'develop'
