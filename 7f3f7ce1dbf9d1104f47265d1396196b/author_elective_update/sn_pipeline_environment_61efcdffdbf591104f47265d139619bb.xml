@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_pipeline_environment">
+    <sn_pipeline_environment action="DELETE">
+        <instance_credential display_value="sn_cicd_spoke.CICD">752a91887740001038e286a2681061fb</instance_credential>
+        <instance_id>Validation Failed: Failure code:401</instance_id>
+        <instance_type>test</instance_type>
+        <instance_url>https://arctiveagdemo6.service-now.com/</instance_url>
+        <is_controller>false</is_controller>
+        <name>ArctiveDemo6</name>
+        <sys_class_name>sn_pipeline_environment</sys_class_name>
+        <sys_created_by>patrick.marty</sys_created_by>
+        <sys_created_on>2022-09-14 13:12:57</sys_created_on>
+        <sys_id>61efcdffdbf591104f47265d139619bb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ArctiveDemo6</sys_name>
+        <sys_package display_value="Swiss Municipality" source="x_arcag_swiss_mun">7f3f7ce1dbf9d1104f47265d1396196b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Swiss Municipality">7f3f7ce1dbf9d1104f47265d1396196b</sys_scope>
+        <sys_update_name>sn_pipeline_environment_61efcdffdbf591104f47265d139619bb</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-09-15 03:00:13</sys_updated_on>
+    </sn_pipeline_environment>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Swiss Municipality">7f3f7ce1dbf9d1104f47265d1396196b</application>
+        <file_path/>
+        <instance_id>5812991fdb270454f492c597059619fa</instance_id>
+        <instance_name>arctiveagdemo8</instance_name>
+        <name>sn_pipeline_environment_61efcdffdbf591104f47265d139619bb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_pipeline_environment"><sn_pipeline_environment action="INSERT_OR_UPDATE"><instance_credential display_value="sn_cicd_spoke.CICD">752a91887740001038e286a2681061fb</instance_credential><instance_id>Validation Failed: Failure code:401</instance_id><instance_type>test</instance_type><instance_url>https://arctiveagdemo6.service-now.com/</instance_url><is_controller>false</is_controller><name>ArctiveDemo6</name><sys_class_name>sn_pipeline_environment</sys_class_name><sys_created_by>patrick.marty</sys_created_by><sys_created_on>2022-09-14 13:12:57</sys_created_on><sys_id>61efcdffdbf591104f47265d139619bb</sys_id><sys_mod_count>2</sys_mod_count><sys_name>ArctiveDemo6</sys_name><sys_package display_value="Swiss Municipality" source="x_arcag_swiss_mun">7f3f7ce1dbf9d1104f47265d1396196b</sys_package><sys_policy/><sys_scope display_value="Swiss Municipality">7f3f7ce1dbf9d1104f47265d1396196b</sys_scope><sys_update_name>sn_pipeline_environment_61efcdffdbf591104f47265d139619bb</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-09-15 03:00:13</sys_updated_on></sn_pipeline_environment></record_update>]]></payload>
+        <payload_hash>-418713656</payload_hash>
+        <record_name>ArctiveDemo6</record_name>
+        <reverted_from/>
+        <source>371e5a47dbb111104f47265d139619dd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-09-15 03:00:13</sys_created_on>
+        <sys_id>41ddc88cdb0e911017d9a08d139619bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1833f16f87a0000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-09-15 03:00:13</sys_updated_on>
+        <type>Environment</type>
+        <update_guid>c5ddc88c0d0e911025631cc4db9309bb</update_guid>
+        <update_guid_history>c5ddc88c0d0e911025631cc4db9309bb:-418713656,3db0993312399110877fe84a4c2601a4:-1850771291,4370d533a3399110990288c69302e296:-1230573370</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ArctiveDemo6">b572ded8db42151017d9a08d1396199b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>patrick.marty</sys_created_by>
+        <sys_created_on>2022-09-16 07:18:12</sys_created_on>
+        <sys_db_object display_value="" name="sn_pipeline_environment">sn_pipeline_environment</sys_db_object>
+        <sys_id>03b9094a7cb946dc801fe8617de15924</sys_id>
+        <sys_metadata>61efcdffdbf591104f47265d139619bb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ArctiveDemo6</sys_name>
+        <sys_package display_value="Swiss Municipality" source="x_arcag_swiss_mun">7f3f7ce1dbf9d1104f47265d1396196b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Swiss Municipality">7f3f7ce1dbf9d1104f47265d1396196b</sys_scope>
+        <sys_scope_delete display_value="">54beebf2db6d4470a5a2af3d419b7ae4</sys_scope_delete>
+        <sys_update_name>sn_pipeline_environment_61efcdffdbf591104f47265d139619bb</sys_update_name>
+        <sys_update_version display_value="sn_pipeline_environment_61efcdffdbf591104f47265d139619bb">41ddc88cdb0e911017d9a08d139619bc</sys_update_version>
+        <sys_updated_by>patrick.marty</sys_updated_by>
+        <sys_updated_on>2022-09-16 07:18:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
